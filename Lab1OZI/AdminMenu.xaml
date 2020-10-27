@@ -1,0 +1,97 @@
+﻿<Page x:Class="Lab1OZI.AdminMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Lab1OZI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AdminMenu">
+
+    <Grid>
+        <!-- Малюємо фон -->
+        <Grid.Background>
+            <SolidColorBrush Color="#68B5D7"/>
+        </Grid.Background>
+        <!-- Скрол для вмісту -->
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            <StackPanel VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        TextBlock.TextAlignment="Center" >
+                <!-- Форма для авторизації-->
+                <Border Background="#FFFBF2"
+                        CornerRadius="11"
+                        Padding="20 40 20 20"
+                        Width="450"
+                        Margin="40 40 40 0">
+                    <StackPanel Margin="44,0,44,0">
+                        <!-- Головний заголовок-->
+                        <TextBlock Text="Меню адміністратора"
+                                   FontSize="30"
+                                   FontFamily="Arial"
+                                   Foreground="#3396C0"/>
+                        <!-- Другорядний заголовок-->
+                        <TextBlock Text=" "
+                                   TextWrapping="Wrap"
+                                   FontSize="13"
+                                   Foreground="#DAD7D2"
+                                   FontFamily="Arial"
+                                   Margin="0 0 0 20"/>
+                        <Button
+                                Content="Список користувачів" 
+                                FontFamily="Arial"
+                                Foreground="#333"
+                                FontSize="15"
+                                FontWeight="SemiBold"
+                                HorizontalAlignment="Center" 
+                                BorderThickness="0"
+                                Background="#FDC21E"
+                                Padding="20 3px"
+                                Margin="0 10"
+                                Click="ShowUserList" Cursor="Hand">
+                        </Button>
+                        <Button
+                                Content="Додати нового користувача" 
+                                FontFamily="Arial"
+                                Foreground="#333"
+                                FontSize="15"
+                                FontWeight="SemiBold"
+                                HorizontalAlignment="Center" 
+                                BorderThickness="0"
+                                Background="#FDC21E"
+                                Padding="20 3px"
+                                Margin="0 10"
+                                Click="AddUser" Cursor="Hand">
+                        </Button>
+                        <Button
+                                Content="Змінити пароль" 
+                                FontFamily="Arial"
+                                Foreground="#333"
+                                FontSize="15"
+                                FontWeight="SemiBold"
+                                HorizontalAlignment="Center" 
+                                BorderThickness="0"
+                                Background="#FDC21E"
+                                Padding="20 3px"
+                                Margin="0 10"
+                                Click="ChangePassword" Cursor="Hand">
+                        </Button>
+                        <Button
+                                Content="Завершити роботу" 
+                                FontFamily="Arial"
+                                Foreground="White"
+                                FontSize="15"
+                                FontWeight="SemiBold"
+                                HorizontalAlignment="Center" 
+                                BorderThickness="0"
+                                Background="Teal"
+                                Padding="20 3px"
+                                Margin="0 10"
+                                Click="Exit" Cursor="Hand">
+                        </Button>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

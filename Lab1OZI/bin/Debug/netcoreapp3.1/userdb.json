@@ -1,0 +1,1 @@
+[{"Login":"ADMIN","Password":"","Role":1,"IsBanned":false,"IsPasswordLimited":false},{"Login":"1","Password":"1","Role":0,"IsBanned":true,"IsPasswordLimited":true},{"Login":"testadd","Password":"","Role":0,"IsBanned":false,"IsPasswordLimited":true},{"Login":"test","Password":"","Role":0,"IsBanned":true,"IsPasswordLimited":false}]
